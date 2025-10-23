@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             item.about
           }</p>
           <div class="flex gap-3">
-          <a href="/initiative.html?name=${
+          <a href="initiative.html?name=${
             item.name
           }&group=${group}" class="bg-blue-700 text-white px-3 py-1 rounded hover:bg-blue-800 transition">More</a>
             <a href="${
@@ -48,3 +48,4 @@ function getServiceUrl(name) {
   const service = services.find((s) => s.name === name);
   return service ? service.url : null; // returns null if not found
 }
+
