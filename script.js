@@ -48,7 +48,7 @@ function loadSections() {
       btn.className =
         "bg-indigo-600 hover:bg-indigo-700 border border-indigo-700 transition-all text-base text-white font-medium rounded-full px-6 py-3 cursor-pointer outline-0";
       btn.setAttribute("type", "button");
-      assertFunctionToExploreButton(btn, "/explore.html?group=" + i.title);
+      assertFunctionToExploreButton(btn, "explore.html?group=" + i.title);
       div8.className = "mt-12 flex flex-wrap gap-x-8 gap-y-6";
       div6.className = "aspect-[7/4]";
       div6Img.setAttribute("src", i.sidePicture);
@@ -107,7 +107,7 @@ function loadSections() {
       btn.className =
         "bg-indigo-600 hover:bg-indigo-700 border border-indigo-700 transition-all text-base text-white font-medium rounded-full px-6 py-3 cursor-pointer outline-0";
       btn.textContent = "Explore";
-      assertFunctionToExploreButton(btn, "/explore.html?group=" + i.title);
+      assertFunctionToExploreButton(btn, "explore.html?group=" + i.title);
       div7.className = "mt-12 flex flex-wrap gap-x-8 gap-y-6";
       for (var service of i.logos) {
         var image = document.createElement("img");
@@ -147,3 +147,4 @@ function getServiceUrl(name) {
   const service = services.find((s) => s.name === name);
   return service ? service.url : null; // returns null if not found
 }
+
